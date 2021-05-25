@@ -1,8 +1,9 @@
 AWS_PROFILE = edula_minerva_$(PROJECT_ENV)
 
 project_env_check:
-	@$(eval PROJECT_ENV := $(shell read -p "ENV? (prd or stg): " ENV; echo $$ENV))
+	@$(eval PROJECT_ENV := $(shell read -p "ENV? (prd or stg): " E
 	@echo "run command in $(PROJECT_ENV)"
+haosdjfal;sdfjsdlfj
 
 deploy: project_env_check
 	@if [[ $(PROJECT_ENV) = 'prd' ]]; then \
